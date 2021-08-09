@@ -1,0 +1,201 @@
+*{
+	font-family: Ice Cream Man DEMO, Impact;
+}
+
+div{
+	color: #CC0000;
+}
+
+.Centrar_texto{
+	text-align: center;
+}
+
+.Centrar_texto_grande{
+	text-align: center;
+	font-size: 30px;
+}
+
+.padding{
+	padding: 15px 15px 15px 15px;
+}
+
+.padding_left{
+	padding-left: 60px;
+}
+
+/*Cabecera*/
+header{
+	background-color: yellow;
+	font-size: 50px;
+}
+
+.table{
+	text-align: center;
+}
+
+
+/*Pié de la página*/
+footer{
+	background-color: #E0E0E0;
+	font-family: Calibri;
+}
+
+.footer_table{
+	text-align: center;
+}
+
+.footer_iconos{
+	font-size: 50px;
+	text-align: center;
+}
+
+.footer_icono_de_Facebook{
+	color: #0066CC;
+	padding-right: 20px;
+}
+
+.footer_icono_de_Pinterest{
+	color: red;
+	padding-left: 20px;
+}
+
+.footer_texto_grande{
+	font-size: 50px;
+}
+
+.footer_texto_pequeno{
+	font-size: 20px;
+}
+
+.footer_texto_especial{
+	padding-top: 60px;
+	font-size: 20px;
+}
+
+
+/*Formulario*/
+
+.Icono_con_texto{
+	text-align: center;
+	font-size: 30px;
+	padding-top: 30px;
+}
+
+.Formulario{
+	width: 50%;
+	height: auto;
+	margin: 50px auto 50px auto;
+	border-radius: 50px 50px 50px 50px;
+	background-color: yellow;
+	padding: 30px;
+	border: 3px solid #CC0000;
+	box-sizing: border-box;
+}
+
+label{
+	cursor: auto;
+	font-size: 20px;
+}
+
+.span{
+	text-align: center;
+	margin: 0px 0px 20px 0px;
+}
+
+input[type=text],[type=date],[type=number],[type=password]{
+	width: 100%;
+	padding: 8px 0px 8px 8px;
+	border: 1px solid #C0C0C0;
+	border-radius: 6px;
+	box-sizing: border-box;
+	font-size: 20px;
+	-webkit-user-select: none;
+  	-moz-user-select: none;
+  	-ms-user-select: none;
+  	user-select: none;
+}
+
+/*Submit*/
+#ID_Submit_Registro{
+	font-size: 40px;
+	background-color: #0774D9;
+	width: 100%;
+	border: 1px solid #0774D9;
+	padding: 15px 0px 15px 0px;
+}
+
+#ID_Submit_Registro:hover{
+	background-color: #45A049;
+	border: 1px solid #45A049;
+}
+
+
+
+/*Estilos de los radios button https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_custom_radio*/
+
+/* The container */
+.Contenedor_Radios {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: "Times New Roman";
+}
+
+/* Hide the browser's default radio button */
+.Contenedor_Radios input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 24px;
+  width: 24px;
+  background-color: white;
+  border-radius: 50%;
+  border: 2px solid #0774D9;
+}
+
+/* On mouse-over, add a grey background color */
+.Contenedor_Radios:hover input ~ .checkmark {
+  background-color: #45A049;
+}
+
+.Contenedor_Radios:hover{
+	background-color: #F2F2F2;
+	color: black;
+}
+
+/* When the radio button is checked, add a blue background */
+.Contenedor_Radios input:checked ~ .checkmark {
+  background-color: #0774D9;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.Contenedor_Radios input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.Contenedor_Radios .checkmark:after {
+ 	top: 6px;
+	left: 6px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}

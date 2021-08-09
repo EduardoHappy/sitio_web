@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<meta charset="utf-8"> <!--Carácteres especiales-->
+		<meta name="viewport" content="width=device-width, initial-scale=1"> <!--Se adapta a las dimensiones de un dispositivo móvil-->
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--Utiliza iconos fa fa-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> <!--Bootsrap, última versión de CSS-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> <!--JQuery-->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script> <!--Popper-->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script> <!--Bootstrap, última versión de JavaScript-->
+
+		<link rel="stylesheet" type="text/css" href="Estilos_CSS/Estilo_1.css" media="screen"> <!--Utiliza un archivo del estilo de CSS-->
+
+		<title>Zona de pruebas de registro de empleado</title>
+	
+	</head>
+
+	<p class="Centrar_texto"><a href="Pagina_principal.html">Ir a la página de inicio</a></p>
+
+	<body>
+
+		<div class="Icono_con_texto"><i class="fa fa-user-plus" style="font-size: 36px"></i>Registro de empleado</div>
+
+		<form class="Formulario" method="post" action="Dona_Bety_BD.php">
+			<label for="ID_Text_Apellido_paterno_Registro">Apellido paterno:</label><br>
+			<input type="text" name="Text_Apellido_paterno_Registro" id="ID_Text_Apellido_paterno_Registro" placeholder="Ingrese aquí su apellido paterno" maxlength="15" required><br>
+			<div class="span"><span id="ID_Text_Apellido_paterno_Registro">Ingrese texto</span><br></div>
+
+
+			<label for="ID_Text_Apellido_materno_Registro">Apellido materno:</label><br>
+			<input type="text" name="Text_Apellido_materno_Registro" id="ID_Text_Apellido_materno_Registro" placeholder="Ingrese aquí su apellido materno" maxlength="15" required><br>
+			<div class="span"><span id="ID_Text_Apellido_materno_Registro">Ingrese texto</span><br></div>
+
+			
+			<label for="ID_Text_Nombre(s)_Registro">Nombre(s):</label><br>
+			<input type="text" name="Text_Nombre(s)_Registro" id="ID_Text_Nombre(s)_Registro" placeholder="Ingrese aquí su(s) nombre(s)" maxlength="30" required><br>
+			<div class="span"><span id="ID_Text_Nombre(s)_Registro">Ingrese texto</span><br></div>
+
+			<label for="ID_Date_Fecha_de_Nacimiento_Registro">Fecha de nacimiento:</label><br>
+			<input type="date" name="Date_Fecha_de_Nacimiento_Registro" id="ID_Date_Fecha_de_Nacimiento_Registro"><br>
+			<div class="span"><span id="ID_Date_Fecha_de_Nacimiento_Registro">Ingrese fecha o seleccione el icono del calendario</span><br></div>
+
+			<hr>
+
+			<label for="ID_Date_Fecha_de_Registro">Fecha de registro:</label><br>
+			<input type="date" name="Date_Fecha_de_Registro" id="ID_Date_Fecha_de_Registro"><br>
+			<div class="span"><span id="ID_Date_Fecha_de_Registro">Ingrese fecha o seleccione el icono del calendario</span><br></div>
+
+			<hr>
+
+			<label for="ID_Radios_Parcial">Tipo de acceso:</label><br><br>
+
+			<div class="custom-control custom-radio">
+					<input type="radio" class="custom-control-input" id="ID_Radios_Tipo_Acceso_1" name="NAME_Radios" value="1">
+					<label class="custom-control-label" for="ID_Radios_Tipo_Acceso_1">Parcial (sólo punto de venta)</label>
+				</div>
+
+				<div class="custom-control custom-radio">
+					 <input type="radio" class="custom-control-input" id="ID_Radios_Tipo_Acceso_2" name="NAME_Radios" value="2">
+					 <label class="custom-control-label" for="ID_Radios_Tipo_Acceso_2">Total (Reportes, Usuarios, punto de venta)</label>
+				</div>
+
+			<hr>
+
+			<label for="ID_Text_Contrasena_Registro">Contraseña:</label><br>
+			<input type="password" name="Password_Contrasena_Registro" id="ID_Password_Contrasena_Registro" placeholder="Ingrese una nueva contraseña"><br>
+			<div class="span"><span id="ID_Text_Contrasena_Registro">Ingrese mímino 6 carácteres</span><br></div>
+
+
+			<label for="ID_Text_Verificar_contrasena_Registro">Verificar contraseña:</label><br>
+			<input type="password" name="Password_Verificar_contrasena_Registro" id="ID_Password_Verificar_contrasena_Registro" placeholder="Vuelva a Ingresar su nueva contraseña">
+			<div class="span"><span id="ID_Text_Verificar_contrasena_Registro">No coincide con su nueva contraseña</span><br></div>
+
+			<hr>
+
+			<button type="submit" class="btn btn-primary" name="Submit_Registro" id="ID_Submit_Registro"><i class="fa fa-sign-in fa-fw" style="font-size: 40px"></i>Registrarse</button>
+
+			</form>
+		
+	</body>
+
+</html>
